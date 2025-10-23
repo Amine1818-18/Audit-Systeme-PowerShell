@@ -1,0 +1,8 @@
+Questions : - Quelle est la différence entre une adresse IP dynamique et une réservation DHCP ? 
+            - Que se passe-t-il si deux serveurs DHCP répondent sur le même réseau ?  
+            - Quelle commande PowerShell permet de visualiser les baux DHCP actifs ? reponds a mes questions stp
+
+Réponses :- Un adresse IP dynamique est attribuée automatiquement par le serveur DHCP à un poste pour une durée limitée dites bail, elle peut changer à l’expiration du bail.
+            La réservation d'adresse IP sur le serveur DHCP se fait grâce à l'adresse Mac de la machine qui recevra toujours la même adresse IP. 
+          -Cela  crée des conflits d'adresse Ip, et un réseau instable
+          -Get-DhcpServerv4Lease
