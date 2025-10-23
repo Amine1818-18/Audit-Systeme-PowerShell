@@ -1,4 +1,4 @@
-# Domaine : entreprisexyz.local
+#Déclaration de variables
 
 $ScopeName = "LAN_EntrepriseXYZ"
 $ScopeStart = "192.168.147.200"
@@ -13,7 +13,7 @@ if (-not (Get-WindowsFeature DHCP).Installed) {
     Install-WindowsFeature DHCP -IncludeManagementTools
 }
 
-# Ajout de l’étendue DHCP
+# Création de l’étendue DHCP
 if (-not (Get-DhcpServerv4Scope -ScopeId 192.168.147.0 -ErrorAction SilentlyContinue)) {
     Add-DhcpServerv4Scope -Name $ScopeName -StartRange $ScopeStart -EndRange $ScopeEnd -SubnetMask $SubnetMask -State Active
 }
@@ -21,7 +21,7 @@ if (-not (Get-DhcpServerv4Scope -ScopeId 192.168.147.0 -ErrorAction SilentlyCont
 # Configuration des options DHCP
 Set-DhcpServerv4OptionValue -ScopeId 192.168.147.0 -DnsServer $DNSServer -Router $Gateway -DnsDomain $DomainName
 
-# Création d’une réservation (exemple : poste administratif)
+# Réservation d'ip pour un poste 
 $ReservationIP = "192.168.147.210"
 $MAC = "00-11-22-33-44-55"  # Remplace par l’adresse MAC réelle du poste
 Add-DhcpServerv4Reservation -ScopeId 192.168.147.0 -IPAddress $ReservationIP -ClientId $MAC -Description "Poste Administratif" -Name "PC-Admin"
