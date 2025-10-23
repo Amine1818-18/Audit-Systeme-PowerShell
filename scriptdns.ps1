@@ -1,5 +1,4 @@
-# Configuration DNS EntrepriseXYZ
-# Domaine AD : text.fr
+# Définition de variables
 
 $ZoneName = "entreprisexyz.local"
 $RecordName = "srv-dc1"
