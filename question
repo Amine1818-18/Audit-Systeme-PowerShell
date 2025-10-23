@@ -1,8 +1,15 @@
-Questions : - Quelle est la différence entre une adresse IP dynamique et une réservation DHCP ? 
+Questions : - Quelle est la différence entre un enregistrement A et un CNAME ?
+            - Quelle commande permet de vérifier la liste des zones DNS existantes ?
+            - Pourquoi utiliser un redirecteur dans un DNS d’entreprise ?
+
+            - Quelle est la différence entre une adresse IP dynamique et une réservation DHCP ? 
             - Que se passe-t-il si deux serveurs DHCP répondent sur le même réseau ?  
             - Quelle commande PowerShell permet de visualiser les baux DHCP actifs ? reponds a mes questions stp
 
-Réponses :- Un adresse IP dynamique est attribuée automatiquement par le serveur DHCP à un poste pour une durée limitée dites bail, elle peut changer à l’expiration du bail.
+Réponses :  -L’enregistrement A associe un nom de domaine à une adresse IP, tandis que le CNAME crée un alias pointant vers un autre nom déjà défini par un A.
+            - Get-DnsServerZone
+            - Pour envoyer les requêtes non résolues en interne vers un serveur DNS externe, améliorant les performances et le contrôle.
+            -Un adresse IP dynamique est attribuée automatiquement par le serveur DHCP à un poste pour une durée limitée dites bail, elle peut changer à l’expiration du bail.
             La réservation d'adresse IP sur le serveur DHCP se fait grâce à l'adresse Mac de la machine qui recevra toujours la même adresse IP. 
-          -Cela  crée des conflits d'adresse Ip, et un réseau instable.
-          -Get-DhcpServerv4Lease
+            -Cela  crée des conflits d'adresse Ip, et un réseau instable.
+            -Get-DhcpServerv4Lease
