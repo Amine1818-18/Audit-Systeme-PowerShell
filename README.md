@@ -1,12 +1,12 @@
    <h1> Mise en place d’une infrastructure Active Directory, DNS, DHCP et RDS sous Windows Server<h1>
-    <p>Mettre en place un domaine d’entreprise nommé texte.fr, structuré en unités d’organisation (OU) et groupes de sécurité, afin de gérer les utilisateurs et les ressources du réseau.<p>
+    <h6>Mettre en place un domaine d’entreprise nommé texte.fr, structuré en unités d’organisation (OU) et groupes de sécurité, afin de gérer les utilisateurs et les ressources du réseau.<h6>
 
 ![alt text](image-5.png)
 
 ![alt text](image-1.png)
 
 ![alt text](image-4.png)
-<p> Création du domaine texte.fr
+<h6> Création du domaine texte.fr
 
 Création de trois unités d’organisation :
 
@@ -19,7 +19,7 @@ IT
 Création des groupes associés : Direction_Group, RH_Group, IT_Group
 
 Ajout des utilisateurs et affectation aux groupes
-<p>
+<h6>
 <br><br>
 
 
