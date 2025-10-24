@@ -20,7 +20,7 @@ Création des groupes associés : Direction_Group, RH_Group, IT_Group
 
 Ajout des utilisateurs et affectation aux groupes
 <p>
-
+<br><br>
 ![alt text](image-3.png)
 
 blabla
