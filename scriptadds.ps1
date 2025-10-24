@@ -64,7 +64,7 @@ foreach ($share in $shares) {
         Write-Host "ℹ️  Le dossier existe déjà : $($share.FolderPath)"
     }
 
-    # Création du partage réseau (si inexistant)
+    # Création du partage réseau 
     $existingShare = Get-SmbShare -Name $share.ShareName -ErrorAction SilentlyContinue
     if ($existingShare) {
         Write-Host "⚠️  Le partage $($share.ShareName) existe déjà."
