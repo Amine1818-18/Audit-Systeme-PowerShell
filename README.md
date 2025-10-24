@@ -23,6 +23,7 @@ Ajout des utilisateurs et affectation aux groupes
 
 ![alt text](image-3.png)
 
+blabla
 ![alt text](image.png)
 
 ![alt text](image.png)
