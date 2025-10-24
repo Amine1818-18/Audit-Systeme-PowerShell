@@ -44,7 +44,28 @@ Réservation d’adresse IP pour un poste administratif
 
 ![alt text](image-6.png)
 
+![alt text](image-8.png)
+
+Installation des rôles RDS : Session Host, Web Access, Connection Broker
+
+Création d’une collection de sessions : Collection_Bureau
+
+Publication de deux RemoteApps : Bloc-notes et Calculatrice
+
+Génération et application d’un certificat SSL auto-signé
+
+
 ![alt text](image-7.png)
 
-![alt text](image-8.png)
+L’infrastructure est désormais :
+
+Active Directory opérationnel (groupes, OU, utilisateurs)
+
+DNS et DHCP configurés et fonctionnels
+
+Partages réseau accessibles selon les droits
+
+Connexion RDS sécurisée et fonctionnelle
+
+Un utilisateur du domaine peut s’authentifier via testacc@text.fr, accéder à ses ressources et utiliser les applications publiées à distance
 
