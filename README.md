@@ -25,10 +25,22 @@ Ajout des utilisateurs et affectation aux groupes
 
 ![alt text](image-3.png)
 
-blabla
 ![alt text](image.png)
 
 ![alt text](image.png)
+Création d’une zone primaire : entreprisexyz.local
+
+Ajout d’un enregistrement A pour le serveur : srv-dc1.entreprisexyz.local → 192.168.147.10
+
+Configuration des redirecteurs vers Google DNS
+
+
+Création d’une étendue LAN : 192.168.147.200 → 192.168.147.220
+
+Définition des options : DNS, passerelle et domaine
+
+Réservation d’adresse IP pour un poste administratif
+
 
 ![alt text](image-6.png)
 
